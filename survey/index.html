@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>FCC Project Survey Form</title>
+	<link rel="stylesheet" type="text/css" href="Form.css">
+</head>
+<body>
+  <div class="container">
+	<h1 id="title">Mentor Interest Survey Form</h1>
+				
+	<form class="survey-info" id="survey-form">
+		
+		<div class="wrapper">
+      <p id="description">This is a survey to assess interest for the mentorship program. </p>
+      
+      <span class="option">* Are you willing to become a mentor at a cohort of self-taught web developers?  </span>
+			<div class="choices">
+			<input type="radio" name="mentor" value="yes">Yes
+			<br>
+			
+			<input type="radio" name="mentor" value="no">No
+			<br>
+			
+			<input type="radio" name="mentor" value="maybe">Maybe
+		</div>
+		
+		<br>
+      <label class="option" id="name-label" for="name" >* Name:</label>
+        <input  class="choices" type="text" id="name" name="name" placeholder="Full Name" required>
+				
+				<label class="option" for="email" id="email-label">* E-mail Address:</label>
+				<input class="choices" type="email" id="email" name="email" placeholder="name@domain.com" required><br>
+				
+			
+				<label class="option" id="number-label" for="number">* Age:</label>
+				<input class="choices" type="number" id="number" name="age" min="1" max="110" placeholder="Your age in numbers" required>
+	
+			<span class="option">Which option best describes your knowledge of mentoring?</span>
+      <div class="choices">
+			<select id="dropdown" name="role">
+        <option value="select-option" selected>Select an option</option>
+				<option value="excellent">Excellent</option>
+				<option value="veryGood">Very Good</option>
+				<option value="good">Good</option>
+				<option value="moderate">Moderate</option>
+				<option value="other">Other</option>
+			</select>
+        </div>
+	
+		<br>
+		
+			<span class="option">* Can you dedicate 4 - 6 hours on a monthly basis? </span>
+			<div class="choices">
+			<input type="radio"  id="definitely" name="recommend" value="Definitely">Definitely
+			<br>
+			<input type="radio" id="maybe" name="recommend" 
+			value="Maybe">Maybe
+			<br>
+			<input type="radio" name="recommend" id="unsure" value="not-sure">Not Sure
+		</div>
+		
+		<br>
+             <span class="option">Please choose a specific day that will work best for monthly meetings?</span>
+             <div class="choices">
+             <select name="day">
+               <option value="select">Select a day</option>
+             	<option value="sunday">Sunday</option>
+             	<option value="monday">Monday</option>
+             	<option value="tuesday">Tuesday</option>
+             	<option value="wednesday">Wednesday</option>
+             	<option value="thursday">Thursday</option>
+             	<option value="friday">Friday</option>
+             	<option value="saturday">Saturday</option>
+             </select>
+		</div>
+  <br>
+	<br>
+	
+             <span class="option">Please check all areas in which you believe you can share your valuable experience and expertise:</span>
+               <div class="choices">
+                  <input type="checkbox"  id="frontenddevelopment" name="projects" value="frontenddevelopment">
+                  <label for="frontenddevelopment">Front-end Development</label><br>
+                  <input type="checkbox"  id="backenddevelopment" name="projects" value="back-end-development">
+                  <label for="backenddevelopment">Back-end development</label><br>
+                  <input type="checkbox"  id="projectreview" name="projects" value="project-review">
+                  <label for="projectreview">Project Review</label><br>
+                  <input type="checkbox"  id="interviewprep" name="projects" value="interviewprep">
+                  <label for="interviewprep">Interview Prep</label><br>
+                  <input type="checkbox"  id="portfolio" name="projects" value="portfolio">
+                  <label for="portfolio">Portfolio</label><br>
+                  <input type="checkbox"  id="networking" name="projects" value="networking">
+                  <label for="networking">Networking</label>
+               </div>
+      <br>
+      <br>
+			<span class="option">Any Comments or Suggestions?</span>
+     
+			<textarea class="choices" rows="10" cols="50" name="comment" form="survey-form">Please provide us with suggestions for making this a successful program.</textarea>
+		<br>
+      <br>
+      <div class="button">
+		<button id="submit">Submit</button>
+        </div>
+	</div> <!-- wrapper -->
+	
+	
+	</form>
+  </div> <!--container-->
+
+</body>
+</html>
