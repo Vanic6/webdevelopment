@@ -1,0 +1,77 @@
+*{
+	box-sizing: border-box; 
+}
+body{
+background: #006100;
+line-height: 2;
+font-family: 'Segoe UI', Tahoma, sans-serif;
+padding: 1em;
+margin: 0;
+display: flex;
+align-items: center;  
+}
+p{
+  text-align: center;
+}
+
+.container{
+	max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+	padding: 1em; 
+}
+.wrapper{
+  box-shadow: 0 10px 5px 0 rgba(0, 0, 0, 0.5)
+}
+.wrapper > *{
+  padding: 1em;
+  margin-top: 10px;
+}
+h1{
+  text-align: center;
+  color: #F0FFF0;
+}
+.survey-info{
+  background: #f9feff;
+}
+
+.choices {
+	display: inline-block;
+	vertical-align: top;
+	width: 40%;
+  line-height: 1.6;
+ /*
+  border-radius: 10px;
+  border-color: #4682B4;
+  */
+}
+
+.option{
+	display: inline-block;
+	width: 40%;
+  line-height: 1;
+	}
+
+textarea{
+	width: 250px;
+	height: 100px;
+	padding: 10px;
+  /*
+  border-radius: 10px;
+  border-color: #4682B4;
+  */
+}
+button{
+	padding: 10px;
+  width: 15%;
+  display: flex;
+ justify-content: center;
+  margin: 0 auto;
+  border-radius: 10px;
+	background-color: #006100;
+  color: #F0FFF0;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+
